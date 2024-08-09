@@ -1,0 +1,23 @@
+﻿@model List<Shared.Models.UserModel>
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>ADI</th>
+            <th>SOYADI</th>
+            <th>KULLANICI_ADI</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model)
+        {
+            <tr>
+                <td>@user.ID</td>
+                <td>@user.ADI</td>
+                <td>@user.SOYADI</td>
+                <td>@user.KULLANICI_ADI</td>
+            </tr>
+        }
+    </tbody>
+</table>
